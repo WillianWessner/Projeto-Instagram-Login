@@ -1,146 +1,80 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripition" content="DevMind Consultoria">
+    <link href="img/instagram-ico.jpg" rel="icon">
+    <meta name="author" content="Willian Wessner">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Instagram • Login</title>
 
-    <head>
-
-        <meta charset="UTF-8">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta name="descripition" content="DevMind Consultoria">
-
-        <link href="img/instagram-ico.jpg" rel="icon">
-
-        <meta name="author" content="Willian Wessner">
-
-        <link rel="stylesheet" href="css/style.css">
-
-        <title>Instagram • Login</title>
-
-
-
-        <!-- Google Fonts (Inter) -->
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    </head>
-
-
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
 <body>
-
     <main class="main-container">
-
         <div class="content-wrapper">
 
-
-
             <!-- Container da Imagem do Telefone (Aparece no Desktop) -->
-
             <div class="phone-image-container">
-
                 <img class="phone-screenshot" src="https://raw.githubusercontent.com/farazc60/Project-Images/refs/heads/main/instagram-login-page.png" alt="Instagram screenshot">
-
             </div>
-
-
 
             <div class="login-container">
 
-
-
                 <div class="forms-container">
-
-
 
                     <div class="login-box">
 
-
-
                         <img class="img-card-login" src="img/instagram-logo.webp" alt="Instagram">
-
-
 
                         <form class="loginForm" id="loginForm">
 
                             <!-- Username -->
-
-                            <input type="text" id="username" placeholder="Telefone, nome do usuário, ou email">
+                            <input type="text" id="username" class="username" placeholder="Telefone, nome do usuário, ou email">
 
                             <!-- Password -->
+                            <div class="password-input-wrapper">
 
-                            <input type="password" id="password" placeholder="Senha">
-                            <button type="button" class="show-password-btn" id="show-password-btn" aria-label="Mostrar senha">Mostrar</button>
+                                <!-- Password -->
+                                <input type="password" class="password" id="password" placeholder="Senha">
+                                <button type="button" class="show-password-btn" id="show-password-btn" aria-label="Mostrar senha">Mostrar</button>
+                            </div>
 
                             <!-- Login Button -->
-
                              <button type="submit" class="login-button" id="login-button" disabled>Entar</button>
-
                         </form>
-
                     </div>
-
-
 
                     <!-- Divisor "OU" -->
-
                     <div class="separator">
-
                         <div class="line start"></div>
-
                         <div class="text">OU</div>
-
                         <div class="line end"></div>
-
                     </div>
-
-
 
                     <!-- Botão do Facebook -->
-
                     <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Foidc%2F%3Fapp_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignupviafb%252F%26response_type%3Dcode%26scope%3Dopenid%2Bemail%2Bprofile%2Blinking%26state%3DATm2Xm5PZhZVTKGo4Z4Oi3mBge1esDhlmxB3htNRN7BcfYAi1mxkcEorZPCMF4XhKf5s4PsZ6Ux0-7Q5_TnQj3UMiX5gso-7vSAETtTnRof5iGJpLxXYrkSHxhQhwK83azYwKinFrbKhWLh9FCZ-4unylHGIoZ7-J1Yhq2sPzZEuiq_I1JWikZDAN2t0-2uRRqU7x5HHooc4FXa83sH5QghJmPXlBQ9RWD3kez7A63WVnaIoCp5-SKgKY9K0wyfgiMuT" class="facebook-login">
-
-                           
-
                         <svg aria-hidden="true" fill="#0095f6" viewBox="0 0 24 24" style="width: 2rem; height: 1rem;">
-
                             <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.046c.73 0 1.325-.593 1.325-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-
                         </svg>
-
                         <span>Entrar com Facebook</span>
-
                     </a>
 
-
-
                     <!-- Esqueci a Senha -->
-
                     <a href="https://www.instagram.com/accounts/password/reset/" class="forgot-password">Esqueceu a senha?</a>
 
-
-
                     <!-- Cadastro Box -->
-
                     <div class="signup-box">
-
                         <span>Não tem uma conta?</span><a href="https://www.instagram.com/accounts/emailsignup/"> Cadastre-se</a>
-
                     </div>
 
-                   
-
                 </div>
-
             </div>
-
-
-
         </div>
 
     </main>
